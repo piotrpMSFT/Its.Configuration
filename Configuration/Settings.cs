@@ -11,7 +11,7 @@ using System.Linq;
 using System.Security;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
-using System.Web.Script.Serialization;
+using Newtonsoft.Json;
 using Its.Recipes;
 
 namespace Its.Configuration
@@ -170,8 +170,7 @@ namespace Its.Configuration
         /// </summary>
         public static object DeserializeDefault(Type targetType, string serialized)
         {
-            var serializer = new JavaScriptSerializer();
-            return serializer.Deserialize(serialized, targetType);
+            return JsonConvert.DeserializeObject(serialized, targetType);
         }
 
         /// <summary>
