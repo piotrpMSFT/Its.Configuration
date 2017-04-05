@@ -3,7 +3,7 @@
 
 using System;
 using System.ComponentModel;
-using System.ComponentModel.Composition;
+using System.Composition;
 using System.Threading;
 
 namespace Its.Configuration.Tests.Recipes

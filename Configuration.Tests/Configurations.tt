@@ -45,7 +45,7 @@
 	var contracts = CompositionExtensions.FindImports(new System.IO.DirectoryInfo(tempPath));
 #>
 using System;
-using System.ComponentModel.Composition;
+using System.Composition;
 
 namespace ImportedConfigurations
 {
